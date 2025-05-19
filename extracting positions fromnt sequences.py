@@ -11,8 +11,8 @@ def extract_region(codon_position, nucleotides_after):
     dna_end = dna_start + 3 + nucleotides_after
     return str(dna_seq[dna_start:dna_end])
 
-region_25 = extract_region(25, 22)  
-region_100 = extract_region(100, 22)  
+region_25 = extract_region(25, 22)  #start position (by codons) here it is stated hat it is 25th amino-acid
+region_100 = extract_region(100, 22)  #end position (by codons) here it is stated hat it is 100th amino-acid
 
 pos_25_start = (25 - 1) * 3 + 1  
 pos_100_start = (100 - 1) * 3 + 1
